@@ -1,0 +1,76 @@
+---
+layout: post
+title: A Derivation of Bernoulli's Equation
+author: Yushun Cheng
+---
+
+<script>
+  MathJax = {
+      tex: {
+          inlineMath: [['$', '$'], ["\\(", "\\)"]],
+      }
+  };
+</script>
+
+<script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+
+<p>
+  This post aims to provide a simple derivation of Bernoulli's equation in
+  fluid dynamics:
+
+  $$ \frac{1}{2} \rho v^2 + \rho g h + p = C, $$
+
+  where $h$ is the depth, $p$ is the pressure, and $C$ is an arbitrary value
+  constant for all points in the fluid.
+</p>
+
+<center>
+  <img src="/images/2022-10-21-bernoulli/cube.svg"/>
+</center>
+
+<p>
+  Consider a very small cube of side length $dr$ in the liquid, then given the
+  density of the liquid, $\rho$, the mass of this cube is $\rho dr^3$.  Also,
+  the cube experiences forces due to pressure, and, for instance, in the
+  $x$-direction, the resultant force is the difference in pressure multiplied
+  by cross-section area, which is $-(\frac{\partial p}{\partial x} dr) dr^2$,
+  or simply $-\frac{\partial p}{\partial x} dr^3$; the negative sign is due to
+  that the force pushing to the right is caused by the pressure on the left
+  side.
+</p>
+
+<center>
+  <img src="/images/2022-10-21-bernoulli/pressure.svg"/>
+</center>
+
+<p>
+  Apply Newton's second law in all directions, and we have
+
+  $$-\frac{\partial p}{\partial \mathbf{r}} = \rho \cdot \mathbf{a}.$$
+
+  If the fluid is in some kind of equilibrium, so that $p$ is only a function
+  of radius $\mathbf{r}$, in other words, the pressure at a point does not vary
+  with time, then the partial derivative of pressure $p$ w.r.t. $\mathbf{r}$ is
+  equivalent to its total derivative, and following the standard steps of
+  solving a differential equation, we get
+
+  $$ - \int dp = \int \rho \frac{d \mathbf{v}}{dt} \cdot d \mathbf{r}. $$
+
+  With the right hand side being rewritten as $\int \rho \mathbf{v} \cdot d
+  \mathbf{v}$, Bernoulli's equation can be obtained.
+</p>
+
+<p>
+  Another derivation can be given by considering
+
+  $$ \mathcal{L} = \frac{1}{2} \rho v^2 - p $$
+
+  as the lagrangian of the cube, and by applying using Noether's theorem with
+  time symmetry, the generalized energy is
+
+  $$ \frac{1}{2} \rho v^2 + p, $$
+
+  which is conserved.
+</p>

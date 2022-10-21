@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="30mm"
+   height="30mm"
+   viewBox="0 0 30 30"
+   version="1.1"
+   id="svg7207"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14, custom)"
+   sodipodi:docname="pressure.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7209"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="1.0729879"
+     inkscape:cx="44.734894"
+     inkscape:cy="95.06165"
+     inkscape:window-width="1280"
+     inkscape:window-height="653"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs7204">
+    <rect
+       x="38.5"
+       y="102"
+       width="115.66338"
+       height="64.843605"
+       id="rect17865" />
+    <rect
+       x="44.5"
+       y="144"
+       width="35"
+       height="14"
+       id="rect17805" />
+    <linearGradient
+       id="linearGradient12840"
+       inkscape:swatch="solid">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop12838" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient11343"
+       inkscape:swatch="solid">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop11341" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient11335"
+       inkscape:swatch="solid">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop11333" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient11327"
+       inkscape:swatch="solid">
+      <stop
+         style="stop-color:#000000;stop-opacity:0;"
+         offset="0"
+         id="stop11325" />
+    </linearGradient>
+    <rect
+       x="38.5"
+       y="102"
+       width="115.66338"
+       height="64.843605"
+       id="rect17865-7" />
+    <rect
+       x="38.5"
+       y="102"
+       width="115.66338"
+       height="64.843605"
+       id="rect17865-6" />
+    <rect
+       x="38.5"
+       y="102"
+       width="115.66338"
+       height="64.843605"
+       id="rect17865-6-3" />
+    <rect
+       x="38.5"
+       y="102"
+       width="115.66338"
+       height="64.843605"
+       id="rect17865-6-3-7" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:0.448528;stroke-dasharray:none;stroke-opacity:1"
+       id="rect7213"
+       width="12.967418"
+       height="12.967418"
+       x="5.5499439"
+       y="9.6947365" />
+    <rect
+       style="fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:0.498708;stroke-dasharray:none;stroke-opacity:1"
+       id="rect16996"
+       width="12.949553"
+       height="7.4383192"
+       x="16.42758"
+       y="6.7314014"
+       transform="matrix(1,0,-0.75148189,0.65975372,0,0)" />
+    <rect
+       style="fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:0.497364;stroke-dasharray:none;stroke-opacity:1"
+       id="rect16996-3"
+       width="12.965219"
+       height="7.3893776"
+       x="-39.128578"
+       y="25.289532"
+       transform="matrix(0.0031464,-0.99999505,0.75170291,-0.65950189,0,0)" />
+    <text
+       xml:space="preserve"
+       transform="scale(0.26458333)"
+       id="text17803"
+       style="white-space:pre;shape-inside:url(#rect17805);display:inline;fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:3.1937;stroke-dasharray:none;stroke-opacity:1" />
+    <text
+       xml:space="preserve"
+       style="font-size:7.49753px;fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:0;stroke-dasharray:none;stroke-opacity:1"
+       x="10.123238"
+       y="26.732023"
+       id="text17811"><tspan
+         sodipodi:role="line"
+         id="tspan17809"
+         style="font-size:7.49753px;stroke-width:0;stroke-dasharray:none"
+         x="10.123238"
+         y="26.732023">dr</tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(0.17323202,0,0,0.17323202,12.873013,-0.78331311)"
+       id="text17863-1"
+       style="font-size:32px;white-space:pre;shape-inside:url(#rect17865-6);shape-padding:10.5;display:inline;fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:0;stroke-dasharray:none;stroke-opacity:1"><tspan
+         x="49"
+         y="142.292"
+         id="tspan541"><tspan
+           style="font-style:italic;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman,  Italic';fill-opacity:1;stroke:#2b2b2b"
+           id="tspan539">dr</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(0.17323202,0,0,0.17323202,0.76985279,2.6418627)"
+       id="text17863-1-6"
+       style="font-size:32px;white-space:pre;shape-inside:url(#rect17865-6-3);shape-padding:10.5;display:inline;fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:0;stroke-dasharray:none;stroke-opacity:1"><tspan
+         x="49"
+         y="142.292"
+         id="tspan545"><tspan
+           style="font-style:italic;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman,  Italic';fill-opacity:1;stroke:#2b2b2b"
+           id="tspan543">dr</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(0.17323202,0,0,0.17323202,3.72888,-6.4818034)"
+       id="text17863-1-6-5"
+       style="font-size:32px;white-space:pre;shape-inside:url(#rect17865-6-3-7);shape-padding:10.5;display:inline;fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:0;stroke-dasharray:none;stroke-opacity:1"><tspan
+         x="49"
+         y="142.292"
+         id="tspan549"><tspan
+           style="font-style:italic;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman,  Italic';fill-opacity:1;stroke:#2b2b2b"
+           id="tspan547">dr</tspan></tspan></text>
+  </g>
+</svg>
