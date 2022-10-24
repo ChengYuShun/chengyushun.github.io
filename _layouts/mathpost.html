@@ -1,0 +1,22 @@
+---
+layout: post
+---
+
+<script>
+  MathJax = {
+      tex: {
+          inlineMath: [["$", "$"], ["\\(", "\\)"]],
+          // packages: {"[+]": ["newcommand"]},
+          macros: {
+              ve: ["\\mathbf{#1}", 1],
+          },
+          tags: "ams",
+      }
+  };
+</script>
+
+<script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+
+{{ content }}
