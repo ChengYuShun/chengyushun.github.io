@@ -1,3 +1,6 @@
 title: CYS's Blogs
 description: Physics, math, computer science, and more.
+
 theme: minima
+minima:
+  skin: dark
