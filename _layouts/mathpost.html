@@ -2,6 +2,12 @@
 layout: post
 ---
 
+<style>
+  p {
+      text-indent: 25px;
+  }
+</style>
+
 <script>
   MathJax = {
       tex: {
@@ -9,6 +15,7 @@ layout: post
           // packages: {"[+]": ["newcommand"]},
           macros: {
               ve: ["\\mathbf{#1}", 1],
+              norm: ["\\left\\lVert#1\\right\\rVert", 1],
           },
           tags: "ams",
       }
@@ -16,7 +23,7 @@ layout: post
 </script>
 
 <script id="MathJax-script" async
-  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.min.js">
 </script>
 
 {{ content }}
