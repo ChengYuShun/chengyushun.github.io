@@ -1,0 +1,557 @@
+---
+layout: mathpost
+title: An Introduction to Exterior Products
+author: Yushun Cheng
+---
+
+<h2> Abstract </h2>
+
+<p> Formulas
+
+  \begin{equation}
+
+  d = \frac{|\ve{n} \cdot \ve{r} - a|}{|\ve{n}|}
+
+  \label{plane_distance}
+  \end{equation}
+
+  and
+
+  \begin{equation}
+
+  d = \frac{|\ve{b} \times (\ve{r} - \ve{a})|}{|\ve{b}|}
+
+  \label{line_distance}
+  \end{equation}
+
+  are useful in calculating the shortest distance between a point and a line or
+  a plane in 3D space, but the uses of dot and cross products seem random and
+  unable to be generalized into higher dimensions.  This article discusses an
+  interpretation of the two formulas, and hence provides a generalization.  It
+  also acts as an introduction to exterior product, which, the author believes,
+  is the very idea behind these formulas.
+</p>
+
+<h2> The Formulas </h2>
+
+<p> There is something interesting about \eqref{plane_distance} where
+  \(\ve{r}\) is the the position vector of a point, \(\ve{n} \cdot \ve{r} = a\)
+  is the equation of a plane, and \(d\) is the shortest distance between them.
+  Note that the dot product \(\ve{n} \cdot \ve{r}\) appears in both the plane
+  equation and the distance formula.  A simple way to think of this is that
+  when a point is on the plane, the distance between the point and the plane
+  must be zero, that is to say
+
+  \[ \ve{n} \cdot \ve{r} - a = 0, \]
+
+  which is equivalent to our plane equation.
+</p>
+
+<p> Now let's consider the case of a point and a line.  With the position
+  vector of a point being \(\ve{r}\), and the equation of a line being \(\ve{r}
+  = \ve{a} + \lambda \ve{b}\), the distance is given by \eqref{line_distance},
+  which means, following the same idea as above, the line must have another
+  equation
+
+  \begin{equation}
+
+  \ve{b} \times \ve{r} = \ve{b} \times \ve{a}.
+
+  \label{line_eq}
+  \end{equation}
+
+  In fact, if we have a vector equation of a plane, just like a vector equation
+  of a line,
+
+  \[ \ve{r} = \ve{a} + \lambda \ve{b} + \mu \ve{c}, \]
+
+  the cartesian equation that corresponds to it would be
+
+  \begin{equation}
+
+  (\ve{b} \times \ve{c}) \cdot \ve{r} = (\ve{b} \times \ve{c}) \cdot \ve{a},
+
+  \label{plane_eq}
+  \end{equation}
+
+  which might suggest a different way of understanding the equations.
+</p>
+
+<p> Firstly, the expression \((\ve{b} \times \ve{c}) \cdot \ve{a}\) is the same
+  thing as the determinant of the matrix with \(\ve{b}\), \(\ve{c}\), and
+  \(\ve{a}\) being its column vectors.  This will become obvious later, but you
+  can readily prove this algebraically.  Also, a determinant is not only an
+  enlargement factor, but also the signed volume of the parallelepiped
+  (i.e. the 3D version of a parallelogram) formed by the column vectors.  This
+  is like the core idea behind determinants.  With that said, \eqref{plane_eq}
+  is effectively saying that the volume formed by vectors \(\ve{b}\),
+  \(\ve{c}\), and \(\ve{r}\) equals the volume formed by vectors \(\ve{b}\),
+  \(\ve{c}\), and \(\ve{a}\).  For the two volumes to be equal, vector
+  \(\ve{r}\) must have the same height \(h\) as vector \(\ve{a}\), relative to
+  the shared base formed by vectors \(\ve{b}\) and \(\ve{c}\).
+
+  <!-- The diagram of a plane equation. -->
+  <center>
+    <img src="/images/2022-11-05-exterior/plane-eq.svg">
+  </center>
+
+  Therefore, the locus of vector \(\ve{r}\) should be parallel to the plane of
+  the base, which explains why our equation is an equation of a plane.  We can
+  also explain our formula of distance this way.  When we have
+
+  \[ (\ve{b} \times \ve{c}) \cdot (\ve{r} - \ve{a}) \]
+
+  in the numerator, we are actually calculating the volume with the
+  <q>height vector</q> being the difference of vectors \(\ve{r}\) and
+  \(\ve{a}\);
+
+  <!-- The diagram of the distance between a point and a plane. -->
+  <center>
+    <img src="/images/2022-11-05-exterior/plane-dist.svg">
+  </center>
+
+  when we divide that by \(|\ve{b} \times \ve{c}|\), which is the area of the
+  base, we are getting the actual height of the vector \((\ve{r} - \ve{a})\),
+  perpendicular to the base, and that is the distance \(d\) between the plane
+  and the point.
+</p>
+
+<p> Let's look at lines now.  For equation \eqref{line_eq}, we are using cross
+  product solely, which kind of like the <q>directional area,</q> compared to
+  volumes calculated by determinants.  A cross product of two vectors has its
+  magnitude being the area of the parallelogram formed by the two vectors, and
+  its direction being normal to both vectors.  Here, since \(\ve{b} \times
+  \ve{r}\) has the same direction as \(\ve{b} \times \ve{a}\), the plane of
+  vectors \(\ve{b}\) and \(\ve{r}\) is actually the same as the plane of
+  vectors \(\ve{b}\) and \(\ve{a}\).  That is to say, vectors \(\ve{r}\),
+  \(\ve{a}\), \(\ve{b}\) are coplanar.  The magnitudes of the two cross
+  products are also equal.  Since they are areas of two parallelograms on the
+  same plane with the same base \(\ve{b}\),
+
+  <!-- The diagram of a line equation. -->
+  <center>
+    <img src="/images/2022-11-05-exterior/line-eq.svg">
+  </center>
+
+  it is obvious that that vector \(\ve{r}\) should have the same height \(h\)
+  relative to the base as vector \(\ve{a}\), and the locus of \(\ve{r}\) is a
+  line passing through \(\ve{a}\) and parallel to \(\ve{b}\).  For formula
+  \eqref{line_distance}, which calculates the shortest distance between a
+  point and a line, we could consider \(\ve{b} \times (\ve{r} - \ve{a})\) as
+  the directional area formed by base \(\ve{b}\) and height vector \((\ve{r} -
+  \ve{a})\), which is the vector pointing from a point on the line to the point
+  \(\ve{r}\).
+
+  <!-- The diagram of the distance between a point and a line. -->
+  <center>
+    <img src="/images/2022-11-05-exterior/line-dist.svg">
+  </center>
+
+  If we divide that by the base \(|\ve{b}|\), we are going to get the height
+  that is perpendicular to the base, or just the distance \(d\) from the point
+  to the line, which is what we want to calculate.
+</p>
+
+<h2> Exterior Products </h2>
+
+<p> Note that we basically utilized the idea of volumes and directional areas
+  to derive the equation for a linear object (i.e. a line, plane, or any
+  higher-dimensional object), and to calculate the distance from a point to that
+  object.  Therefore, it is potentially helpful to consider the properties that
+  directional hypervolumes might have.
+</p>
+
+<h3> Properties </h3>
+
+<p> Let's denote the volume of the parallelepiped formed by vectors \(\ve{a}\),
+  \(\ve{b}\), and \(\ve{c}\) as \(V(\ve{a}, \ve{b}, \ve{c})\), and the area
+  formed by vectors \(\ve{a}\) and \(\ve{b}\) as \(A(\ve{a}, \ve{b})\).  It
+  seems that instead of calculating the volume \(V(\ve{a}, \ve{b}, \ve{c})\)
+  directly, we could first of all calculate the directional area \(A(\ve{a},
+  \ve{b})\), and then combine the magnitude of that area as well as its
+  direction with the third vector \(\ve{c}\), namely taking taking vectors
+  \(\ve{a}\) and \(\ve{b}\) as the base, and multiplying it by the height.  We
+  could also take vectors \(\ve{b}\) and \(\ve{c}\) or vectors \(\ve{a}\) and
+  \(\ve{c}\) as the base, multiplied by the height of the remaining vector,
+  getting the same volume.  This fact suggests that the directional hypervolume
+  of vectors follows something similar to associative law, in other words,
+  \(V(A(\ve{a}, \ve{b}), \ve{c}) = V(\ve{a}, A(\ve{b}, \ve{c}))\); but
+  apparently, associativity can only exist in binary operations, so let's try
+  to redefine the calculation of hypervolumes as a binary operation, and see
+  what is going to happen by considering a few properties of this operation.
+</p>
+
+&nbsp;
+
+<p> <strong>Definition</strong> In an \(n\)-dimensional vector space, denote
+  the directional hypervolume of the parallelotope (a higher-dimensional
+  generalization of parallelograms and parallelepipeds) formed by the vectors
+  \(\ve{a}_1, \ve{a}_2, \ldots, \ve{a}_m\) as \((\ve{a}_1 \wedge \ve{a}_2
+  \wedge \ldots \wedge \ve{a}_m)\), where \(m \le n\).  The operation
+  \(\wedge\) is known as <dfn>exterior product</dfn>, or <dfn>wedge
+  product</dfn>.
+</p>
+
+&nbsp;
+
+<p id="prop_1">
+  <strong>Property 1</strong> Exterior product satisfies associative law, i.e.
+
+  \[ (\ve{a} \wedge \ve{b}) \wedge \ve{c} = \ve{a} \wedge (\ve{b} \wedge
+  \ve{c}). \]
+
+  This is implied when we wrote
+
+  \[ \ve{a}_1 \wedge \ve{a}_2 \wedge \ldots \wedge \ve{a}_m. \]
+</p>
+
+&nbsp;
+
+<p>
+  <a id="prop_2"></a><strong>Property 2</strong> Exterior product is negated
+  when any two vectors are swapped, i.e.
+
+  \[ \ldots \wedge \ve{a} \wedge \ldots \wedge \ve{b} \wedge \ldots = - (\ldots
+  \wedge \ve{b} \wedge \ldots \wedge \ve{a} \wedge \ldots). \]
+</p>
+
+<p>
+  If we swap any two vectors, they are still the same collection of vectors,
+  but in a different orientation, so we will have the same magnitude, with the
+  exact opposite direction.  An important implication of this property is that
+
+  \begin{equation}
+
+  \ldots \wedge \ve{a} \wedge \ldots \wedge \ve{a} \wedge \ldots = 0.
+
+  \label{alternating_to_zero}
+  \end{equation}
+</p>
+
+&nbsp;
+
+<p>
+  <a id="prop_3"></a><strong>Property 3</strong> Exterior multiplication
+  distributes over addition, i.e.
+
+  \[ \ldots \wedge (\alpha + \beta) \wedge \ldots = (\ldots \wedge \alpha
+  \wedge \ldots) + (\ldots \wedge \beta \wedge \ldots), \]
+
+  where \(\alpha\) and \(\beta\) can be either vectors or exterior products of
+  the same number of vectors.
+</p>
+
+<p>
+  This is property cannot be proved directly, but the words below are
+  attempting to give you an idea of where this comes from.  Let's firstly
+  consider a simpler case, where \(m\) equals \(n\), in other words, the
+  dimension of the space equals the number of vectors, and we will only
+  consider addition between vectors, not exterior products, since we haven't
+  defined additions for them yet.  With that given, an exterior product is
+  basically an \(n\)-dimensional hypervolume in an \(n\)-dimensional space,
+  with no direction but a sign representing the orientation of the vectors.
+  Then if you divide one of the vectors into two vectors, the height of the
+  original vector would just equal the sum of the heights of the two new
+  vectors, relative to the base formed by the rest of the vectors.
+
+  <!-- The diagram of distributive law for determinants. -->
+  <center>
+    <img src="/images/2022-11-05-exterior/distributive.svg">
+  </center>
+
+  The heights become hypervolumes when multiplied by the shared base, so
+  basically we can conclude a special case of this property,
+
+  \begin{equation}
+  \label{prop_3_spec}
+
+  \ldots \wedge (\ve{a} + \ve{b}) \wedge \ldots = (\ldots \wedge \ve{a}
+  \wedge \ldots) + (\ldots \wedge \ve{b} \wedge \ldots),
+
+  \end{equation}
+
+  where both sides are exterior products of \(n\) vectors.  Note that this
+  already allows us to calculate determinants, which are equivalent to exterior
+  products that we are considering, since they are both calculating
+  hypervolumes of the same dimension.  By using this property, we could rewrite
+  the product into the form \(a(\ve{e}_1 \wedge \ve{e}_2 \wedge \ldots \wedge
+  \ve{e}_n)\), where \(a\) is a scalar, and vectors \(\ve{e}_1\) to
+  \(\ve{e}_n\) are the standard basis.  This is true because any other
+  combinations of these vectors would necessarily duplicate, which results in
+  \(0\) according to \eqref{alternating_to_zero}, and any other permutations
+  could be rewritten as this one after a few swaps
+  using <a href="#prop_2">Property 2</a>.  To further evaluate a determinant,
+  the exterior product \((\ve{e}_1 \wedge \ve{e}_2 \wedge \ldots \wedge
+  \ve{e}_n)\) could be considered as \(1\), for it is effectively the
+  hypervolume a unit hypercube.  You can find more details (and other
+  interesting stuff) in
+  <a href="https://www.youtube.com/watch?v=23LLB9mNJvc">this video</a>.
+</p>
+
+<p> A determinant may be considered as a scalar, but generally speaking, most
+  exterior products have directions, despite the fact that they are not simply
+  vector directions.  That leaves us a question: how do we know if two
+  directions are the same, and what exactly makes two exterior products equal
+  to each other.  We may define two exterior products of the same quantity of
+  vectors, \(\alpha\) and \(\beta\), to be equal if and only if
+
+  \[ \alpha \wedge \gamma = \beta \wedge \gamma, \]
+
+  where \(\gamma\) is an arbitrary exterior product.  Since we already have
+  determinants defined, an easy way to utilize this definition is to arrange
+  the number of vectors that make up \(\gamma\) so that \(\alpha \wedge
+  \gamma\) and \(\beta \wedge \gamma\) are both determinants, which we already
+  know how to calculate.
+</p>
+
+<p> After being able to verify whether two exterior products are equal, we
+  still have to find a way in which we can determine the sum of two exterior
+  products.  Following the same idea, we define <a href="#prop_3">Property
+  3</a> in an equivalent form: the exterior products \(\alpha\) and \((\beta +
+  \gamma)\) are to be equal if and only if
+
+  \[ \alpha \wedge \delta = (\beta \wedge \delta) + (\gamma \wedge \delta), \]
+
+  where that \(\delta\) is again an arbitrary exterior product.  Note that this
+  definition is consistent with vector addition, since, as we have seen in
+  \eqref{prop_3_spec}, exterior multiplication already distributes over vector
+  addition.
+</p>
+
+&nbsp;
+
+<p>
+  Hitherto, with its three properties, exterior product has already
+  been properly defined.  Let's look at an example of how the calculation is
+  done.
+</p>
+
+&nbsp;
+
+<p>
+  <a id="example:cross"></a><strong>Example</strong> Calculate
+
+  \[ \begin{bmatrix} a \\ b \\ c \end{bmatrix} \wedge \begin{bmatrix} d \\ e \\
+  f \end{bmatrix}. \]
+</p>
+
+<p>
+  Rewrite each vector into the form \(a \ve{i} + b \ve{j} + c \ve{k}\),
+  applying <a href="#prop_3">Property 3</a>, and then we have
+
+  <a id="cross_product"></a> \[ (ae - bd) (\ve{i} \wedge \ve{j}) + (bf - ce)
+  (\ve{j} \wedge \ve{k}) + (cd - af) (\ve{k} \wedge \ve{i}), \]
+
+  which has its components exactly the same as the cross product of the two
+  vectors.  This makes sense because we are aiming to calculate directional
+  hypervolumes, and cross product is basically directional area.
+</p>
+
+&nbsp;
+
+<p> We still have to figure how to find the magnitude of an exterior product,
+  i.e. its hypervolume.  In the case of cross products, the norm of the
+  resulting vector is the maginitude of directional area.  Therefore, we might
+  make a reasonable inference that adding the square of every individual
+  component in an exterior product would give us the the square of that
+  hypervolume, in the same way as taking the norm of a vector.  An informal
+  proof is provided below, but you may also take this result as granted, and
+  skip the proof part.
+</p>
+
+<h3> Norms </h3>
+
+<p> Define the square root of the sum of squares of all components of an
+  exterior product as its <dfn>norm</dfn>, written as \(\norm{\alpha}\).  For
+  instance, the norm of the exterior product in
+  the <a href="#example:cross">last example</a> is
+
+  \[ \sqrt{(ae - bd)^2 + (bf - ce)^2 + (cd - af)^2}. \]
+
+  Denote the hypervolume formed by vectors \(\ve{a}_1\) to \(\ve{a}_m\) as
+  \(V(\ve{a}_1, \ve{a}_2, \ldots, \ve{a}_m)\); we might also use this notation
+  in a subtler way, as we already have.  We will prove that the magnitude of a
+  hypervolume equals the norm of the exterior product that corresponds to it,
+  in other words,
+
+  \[ \norm{\ve{a}_1 \wedge \ve{a}_2 \wedge \ldots \wedge \ve{a}_m} =
+  V(\ve{a}_1, \ve{a}_2, \ldots, \ve{a}_m), \]
+
+  or equivalently, as \(V\) is positive,
+
+  \begin{equation} \label{norm_vol}
+
+  \norm{\ve{a}_1 \wedge \ve{a}_2 \wedge \ldots \wedge \ve{a}_m}^2 =
+  V^2(\ve{a}_1, \ve{a}_2, \ldots, \ve{a}_m).
+
+  \end{equation}
+</p>
+
+&nbsp;
+
+<p> <strong>Projections</strong> We will use the idea of projection quite
+  often, so it is worth to first of all mention some ideas about it.
+</p>
+
+<p>
+  To project an object in some direction, the easiest way is to drop the
+  components that are parallel it, since all those components will be zero
+  after the projection.  Components of an exterior product can be considered as
+  projections.  For an exterior product of \(m\) vectors in an
+  \(n\)-dimensional space, it is not hard to see that there are \(^nC_m\)
+  components in total.  Each of them contains \(m\) base vectors, and it may be
+  considered as the projection of the object in all directions except those.
+</p>
+
+&nbsp;
+
+<p> We will use mathematical induction.  Suppose that in a vector space of
+  dimension \((n - 1)\), equation \eqref{norm_vol} always holds.  We are going
+  to show that the same equation holds in an \(n\)-dimensional vector space.
+</p>
+
+<p> When there are \(n\) vectors, there is only one component, the determinant,
+  in the exterior product, and it equals the hypervolume \(V(\ve{a}_1,
+  \ve{a}_2, \ldots, \ve{a}_n)\), so the relation \eqref{norm_vol} is obviously
+  true.
+</p>
+
+<p> When there are less than \(n\) vectors, suppose there are \(m\) vectors,
+  \(\ve{a}_1\) to \(\ve{a}_m\), where \(m\) is less than \(n\).  Given one of
+  the standard unit vectors, \(\ve{e}\), each vector can be resolved into the
+  form \(\ve{a}'_i + a\ve{e}\), and \(\ve{a}'_i\) is a vector that does not
+  have any \(\ve{e}\) component; then, the left hand side of \eqref{norm_vol}
+  can be rewritten as
+
+  \[ \norm{\ve{a}'_1 \wedge \ve{a}'_2 \wedge \ldots \wedge \ve{a}'_m + \omega
+  \wedge \ve{e}}^2, \]
+
+  where \(\omega\) is an exterior product.  Since the two terms has no
+  components in common, it can be further decomposed, so we have
+
+  \begin{equation} \label{two_proj}
+
+  \norm{\ve{a}_1 \wedge \ve{a}_2 \wedge \ldots \wedge \ve{a}_m}^2 =
+  \norm{\ve{a}'_1 \wedge \ve{a}'_2 \wedge \ldots \wedge \ve{a}'_m}^2 +
+  \norm{\omega \wedge \ve{e}}^2.
+
+  \end{equation}
+</p>
+
+<p> The expression \((\ve{a}'_1 \wedge \ve{a}'_2 \wedge \ldots \wedge
+  \ve{a}'_m)\), has no \(\ve{e}\) components, so it is basically of dimension
+  \((n - 1)\), and after applying our assumption for mathematical induction, we
+  get
+  
+  \begin{equation} \label{proj_h_volume}
+
+  \norm{\ve{a}'_1 \wedge \ve{a}'_2 \wedge \ldots \wedge \ve{a}'_m}^2 =
+  V^2(\ve{a}'_1, \ve{a}'_2, \ldots, \ve{a}'_m).
+
+  \end{equation}
+
+  The vector \(\ve{a}'_i\) can be obtained by dropping the \(\ve{e}\) component
+  of vector \(\ve{a}_i\), which is equivalent to projecting vector \(\ve{a}_i\)
+  onto a space that is perpendicular to \(\ve{e}\).
+
+  <!-- The diagram of a surface projected onto a plane. -->
+  <center>
+    <img src="/images/2022-11-05-exterior/proj_h.svg">
+  </center>
+
+  Suppose the angle between the object and the space is \(\theta\), then since
+  \(V\) is projected by an angle of \(\theta\), it is multiplied by a factor of
+  \(\cos \theta\).  Together with \eqref{proj_h_volume}, we get
+
+  \begin{equation} \label{cos_2}
+
+  \norm{\ve{a}'_1 \wedge \ve{a}'_2 \wedge \ldots \wedge \ve{a}'_m}^2 =
+  V^2(\ve{a}_1, \ve{a}_2, \ldots, \ve{a}_m) \cos^2 \theta.
+
+  \end{equation}
+</p>
+
+<p> Following the same idea, the expression \(\norm{\omega \wedge \ve{e}}^2\)
+  can be considered as the sum of squares of a few projections.  Denote the
+  factor of a projection as \(k\), and then we have
+
+  \[ \begin{align*} \norm{\omega \wedge \ve{e}}^2 & = \sum \text{projection}^2
+  \\ & = \sum (k_iV)^2 \\ & = V^2 \sum k_i^2. \end{align*} \]
+
+  If we cut the object into slices, then since they are all parallel to each
+  other, factors \(k\)'s would be identical for all of them.  Let's find \(\sum
+  k_i^2\) for a specific slice.  Consider a slice obtained by two cuts
+  perpendicular to the \(\ve{e}\) direction, with an infinitasimally small
+  distance between them, so it is almost of dimension \((m - 1)\), one
+  dimension lower than the original object.  Denote its <q>height</q> in the
+  \(\ve{e}\) direction as \(\delta h\), its <q>width</q> perpendicular to the
+  cuts as \(\delta w\), its \((m - 1)\)-dimensional hypervolume as \(\lambda\),
+  and the projection of \(\lambda\) as \(l\).
+
+  <!-- Diagram of a single slice and its projection. -->
+  <center>
+    <img src="/images/2022-11-05-exterior/proj_v.svg">
+  </center>
+
+  \(\lambda\) is projected onto a space of dimension \(m\), one higher than
+  itself, but since the \(\ve{e}\) component is predictably zero, it is
+  equivalent to an \((m - 1)\)-dimensional projection.  Hence, \(l\) has no
+  direction.  Taking the products \(V(\lambda) \times \delta w\) and \(l \times
+  \delta h\) as approximately the hypervolumes of the unprojected and the
+  projected hypervolumes, respectively, we have
+
+  \[ \begin{align*} \sum k_i^2 & = \frac{\sum
+  V^2(\text{projection})}{V^2(\text{slice})} \\
+
+  & = \frac{\sum l_i^2 \delta h^2}{V^2(\lambda) \delta w^2} \\
+
+  & = \frac{\sum l_i^2}{V^2(\lambda)} \sin^2 \theta. \end{align*}
+  \]
+
+  The \(l\)'s are basically all the \(^{n - 1}C_{m - 1}\) projections of
+  \(\lambda\) , in directions perpendicular to \(\ve{e}\), so the numerator is
+  the same as \(\norm{\lambda}^2\).  Apply our assumption again, and we have
+
+  \[ \sum k_i^2 = \sin^2 \theta, \]
+
+  which means
+
+  \begin{equation} \label{sin_2}
+
+  \norm{\omega \wedge \ve{e}}^2 = V^2 \sin^2 \theta.
+
+  \end{equation}
+</p>
+
+<p> Finally, add \eqref{cos_2} and \eqref{sin_2}, and from \eqref{two_proj}, we
+  obtain
+
+  \[ \norm{\ve{a}_1 \wedge \ve{a}_2 \wedge \ldots \wedge \ve{a}_m}^2 =
+  V^2(\ve{a}_1, \ve{a}_2, \ldots, \ve{a}_m).\]
+
+  It is obvious that we can show \eqref{norm_vol} in a lower dimension, so by
+  mathematical induction, we have proved that \eqref{norm_vol} is true in all
+  dimensions.
+</p>
+
+<p align="right">
+  &#9632;
+</p>
+
+<h2> Back to Formulas </h2>
+
+<p> We are now able to write the distance formulas in a more general way.  For
+  an object with a vector equation
+
+  \[ \ve{r} = \ve{a} + \sum_{i = 1}^{m} s_i \ve{a}_i, \]
+
+  denote \((\ve{a}_1 \wedge \ve{a}_2 \wedge \ldots \wedge \ve{a}_m)\) as
+  \(\alpha\), so the equation can be rewritten equivalently in wedge notation
+  as
+
+  \[ \alpha \wedge \ve{r} = \alpha \wedge \ve{a}, \]
+
+  and the distance between a point with position vector \(\ve{r}\) and the
+  object is
+
+  \[ \frac{\norm{\alpha \wedge (\ve{r} - \ve{a})}}{\norm{\alpha}}. \]
