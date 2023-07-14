@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="105.67292mm"
+   height="42.4375mm"
+   viewBox="0 0 105.67292 42.4375"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   sodipodi:docname="magnus.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     showguides="true"
+     inkscape:zoom="1.4142136"
+     inkscape:cx="190.56528"
+     inkscape:cy="168.99852"
+     inkscape:window-width="1272"
+     inkscape:window-height="643"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2">
+    <marker
+       style="overflow:visible"
+       id="marker16485"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Arrow1"
+       markerWidth="4.0606604"
+       markerHeight="6.7071066"
+       viewBox="0 0 4.0606602 6.7071068"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:none;stroke:context-stroke;stroke-width:1;stroke-linecap:butt"
+         d="M 3,-3 0,0 3,3"
+         id="path16483"
+         transform="rotate(180,0.125,0)"
+         sodipodi:nodetypes="ccc" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker16485_Fnone_S-727272"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Arrow1"
+       markerWidth="4.0606604"
+       markerHeight="6.7071066"
+       viewBox="0 0 4.0606602 6.7071068"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:none;stroke:#727272;stroke-width:1;stroke-linecap:butt"
+         d="M 3,-3 0,0 3,3"
+         id="path25044"
+         transform="rotate(180,0.125,0)"
+         sodipodi:nodetypes="ccc" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Dot"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Dot"
+       markerWidth="5.6666665"
+       markerHeight="5.6666665"
+       viewBox="0 0 5.6666667 5.6666667"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.5)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 5,0 C 5,2.76 2.76,5 0,5 -2.76,5 -5,2.76 -5,0 c 0,-2.76 2.3,-5 5,-5 2.76,0 5,2.24 5,5 z"
+         id="Dot1"
+         sodipodi:nodetypes="sssss" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Dot_Fnone_S-5c888b"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Dot"
+       markerWidth="5.6666665"
+       markerHeight="5.6666665"
+       viewBox="0 0 5.6666667 5.6666667"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.5)"
+         style="fill:#5c888b;fill-rule:evenodd;stroke:#5c888b;stroke-width:1pt"
+         d="M 5,0 C 5,2.76 2.76,5 0,5 -2.76,5 -5,2.76 -5,0 c 0,-2.76 2.3,-5 5,-5 2.76,0 5,2.24 5,5 z"
+         id="path25047"
+         sodipodi:nodetypes="sssss" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker13984"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Arrow1"
+       markerWidth="4.0606604"
+       markerHeight="6.7071066"
+       viewBox="0 0 4.0606602 6.7071068"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:none;stroke:context-stroke;stroke-width:1;stroke-linecap:butt"
+         d="M 3,-3 0,0 3,3"
+         id="path13982"
+         transform="rotate(180,0.125,0)"
+         sodipodi:nodetypes="ccc" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker13984_Fnone_S-3fa59a"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Arrow1"
+       markerWidth="4.0606604"
+       markerHeight="6.7071066"
+       viewBox="0 0 4.0606602 6.7071068"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:none;stroke:#3fa59a;stroke-width:1;stroke-linecap:butt"
+         d="M 3,-3 0,0 3,3"
+         id="path25050"
+         transform="rotate(180,0.125,0)"
+         sodipodi:nodetypes="ccc" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Arrow1"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Arrow1"
+       markerWidth="4.0606604"
+       markerHeight="6.7071066"
+       viewBox="0 0 4.0606602 6.7071068"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:none;stroke:context-stroke;stroke-width:1;stroke-linecap:butt"
+         d="M 3,-3 0,0 3,3"
+         id="path5057"
+         transform="rotate(180,0.125,0)"
+         sodipodi:nodetypes="ccc" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Arrow1_Fnone_S-5c888b"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Arrow1"
+       markerWidth="4.0606604"
+       markerHeight="6.7071066"
+       viewBox="0 0 4.0606602 6.7071068"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:none;stroke:#5c888b;stroke-width:1;stroke-linecap:butt"
+         d="M 3,-3 0,0 3,3"
+         id="path13680"
+         transform="rotate(180,0.125,0)"
+         sodipodi:nodetypes="ccc" />
+    </marker>
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-12.118751,-20.585417)">
+    <rect
+       style="fill:#009df3;fill-opacity:0.490132;stroke:none;stroke-width:0.709816;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="rect20881"
+       width="170.99904"
+       height="95.976486"
+       x="0.33216539"
+       y="13.850224" />
+    <rect
+       style="fill:none;fill-opacity:0.490132;stroke:#0cc5ff;stroke-width:0.55;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="rect283"
+       width="84.666664"
+       height="19.049999"
+       x="21.43125"
+       y="30.162498" />
+    <circle
+       style="fill:#948c70;fill-opacity:1;stroke:#676030;stroke-width:0.65;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-end:;paint-order:stroke fill markers"
+       id="path7752"
+       cx="64.822914"
+       cy="40.481247"
+       r="3.7041667" />
+    <path
+       style="fill:none;fill-opacity:0;stroke:#7e7e7e;stroke-width:0.45;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       d="m 78.19067,30.169856 c -0.03073,-2.99827 0.931536,0.01358 1.637025,-2.946646 0.67133,2.847441 1.86903,0.01635 1.824117,2.899874"
+       id="path13254"
+       sodipodi:nodetypes="ccc" />
+    <text
+       xml:space="preserve"
+       style="font-weight:bold;font-size:4.23333px;font-family:serif;-inkscape-font-specification:'serif Bold';fill:none;fill-opacity:0;stroke:#7e7e7e;stroke-width:0.450001;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       x="77.522911"
+       y="26.061457"
+       id="text13318"><tspan
+         sodipodi:role="line"
+         id="tspan13316"
+         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:serif;-inkscape-font-specification:'serif Italic';fill:#828282;fill-opacity:1;stroke:none;stroke-width:0.45"
+         x="77.522911"
+         y="26.061457">dL</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-weight:bold;font-size:4.23333px;font-family:serif;-inkscape-font-specification:'serif Bold';fill:none;fill-opacity:0;stroke:#7e7e7e;stroke-width:0.450001;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       x="85.746017"
+       y="28.553911"
+       id="text13318-5"><tspan
+         sodipodi:role="line"
+         id="tspan13316-3"
+         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:serif;-inkscape-font-specification:'serif Italic';fill:#828282;fill-opacity:1;stroke:none;stroke-width:0.45"
+         x="85.746017"
+         y="28.553911">V'+δv</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-weight:bold;font-size:4.23333px;font-family:serif;-inkscape-font-specification:'serif Bold';fill:none;fill-opacity:0;stroke:#7e7e7e;stroke-width:0.450001;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       x="88.578056"
+       y="53.810883"
+       id="text13318-5-5"><tspan
+         sodipodi:role="line"
+         id="tspan13316-3-6"
+         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:serif;-inkscape-font-specification:'serif Italic';fill:#828282;fill-opacity:1;stroke:none;stroke-width:0.45"
+         x="88.578056"
+         y="53.810883">V'</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-weight:bold;font-size:4.23333px;font-family:serif;-inkscape-font-specification:'serif Bold';fill:none;fill-opacity:0;stroke:#7e7e7e;stroke-width:0.450001;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       x="98.952972"
+       y="57.935581"
+       id="text13318-5-5-2"><tspan
+         sodipodi:role="line"
+         id="tspan13316-3-6-9"
+         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:serif;-inkscape-font-specification:'serif Italic';fill:#828282;fill-opacity:1;stroke:none;stroke-width:0.45"
+         x="98.952972"
+         y="57.935581">V'≈V</tspan></text>
+    <path
+       style="fill:none;fill-opacity:1;stroke:#5c888b;stroke-width:0.45;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-start:url(#Dot_Fnone_S-5c888b);marker-end:url(#Arrow1_Fnone_S-5c888b);paint-order:stroke fill markers"
+       d="m 80.124379,30.427555 h 8.980257"
+       id="path13534" />
+    <path
+       style="fill:none;fill-opacity:1;stroke:#5c888b;stroke-width:0.45;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-start:url(#Dot_Fnone_S-5c888b);marker-end:url(#Arrow1_Fnone_S-5c888b);paint-order:stroke fill markers"
+       d="m 80.20862,49.136423 h 8.980256"
+       id="path13534-7" />
+    <path
+       style="fill:none;fill-opacity:1;stroke:#3fa59a;stroke-width:2.65;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#marker13984_Fnone_S-3fa59a);paint-order:stroke fill markers"
+       d="m 28.575,39.687499 8.401091,0.124266"
+       id="path13980"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;fill-opacity:1;stroke:#727272;stroke-width:0.45;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#marker16485_Fnone_S-727272);paint-order:stroke fill markers"
+       d="m 59.887961,43.165791 c -1.000885,-1.619976 -1.106201,-3.40862 0,-4.905334"
+       id="path16481"
+       sodipodi:nodetypes="cc" />
+  </g>
+</svg>
