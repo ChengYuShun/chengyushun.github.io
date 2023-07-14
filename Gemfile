@@ -1,5 +1,4 @@
 source "https://rubygems.org"
 
-gem "jekyll", "~> 4.3.0"
-gem "minima", "~> 2.5.1"
-gem "http_parser.rb", "~> 0.6.0", :platforms => [:jruby]
+gem "github-pages", group: :jekyll_plugins
+gem "webrick", "~> 1.8"
