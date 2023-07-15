@@ -7,13 +7,13 @@ author: Yushun Cheng
 <p>
   Recently, one of my friends was intrigued by a physical phenomenon known as
   <a href="https://en.wikipedia.org/wiki/Magnus_effect"><i>Magnus
-  effect</i></a>, in which an object<apo>s path is curved due to its rotation.
-  While I was trying to explain this effect using Bernoulli<apo>s principle, I
-  found that
+  effect</i></a>, in which a moving object<apo>s path is curved due to its
+  rotation.  While I was trying to explain this effect using Bernoulli<apo>s
+  principle, I found that
   <a href="https://chengyushun.github.io/2022/10/21/bernoulli.html">my previous
-  derivation</a> of this principle was incorrect.  Specifically, I was to vague
-  when dealing with PDEs.  So this time I will derive it in a more rigorous
-  manner, and use it to explain Magnus effect.
+  derivation</a> of this principle was incorrect.  Specifically, I was too
+  vague when dealing with PDEs.  So this time I will derive it in a more
+  rigorous manner, and use it to explain Magnus effect.
 </p>
 
 <h2>Bernoulli<apo>s Equation</h2>
@@ -237,10 +237,11 @@ author: Yushun Cheng
 
 <p>
   A rigorous derivation of this theorem can be found by using complex analysis,
-  but only an intuitive one will be given below.  Imagine two streamlines, one
-  above the object, and another below, are sufficiently away from the object so
-  that the speed along both is approximately $V$.  Choose a large volume of
-  fluid between the two streamlines around the object.
+  but only an intuitive one will be given below.  We shall set the object
+  fixed, so as to simplify the model.  Imagine two streamlines, one above the
+  object, and another below, are sufficiently away from the object so that the
+  speed along both is approximately $V$.  Choose a large volume of fluid
+  between the two streamlines around the object.
 
   <center>
     <img src="/images/2023-07-14-magnus/derivation.svg">
@@ -289,6 +290,6 @@ author: Yushun Cheng
   result</a> from a German physics forum, which differs from the circulation
   given by NASA exactly by a factor of two.  The idea here is also to
   superimpose two flow fields, with one of them being an ideal vortex.
-  However, the other field is a completely uniform flow, meaning that the fluid
-  effectively ignores the cylinder, and flows through it!
+  However, the other field is a constant, meaning that the fluid effectively
+  ignores the cylinder, and flows through it!
 </p>
