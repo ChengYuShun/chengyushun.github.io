@@ -1,0 +1,8 @@
+{{ $ret := "" }}
+
+{{ $ret = site.Title }}
+{{ with .Title }}
+  {{ $ret = . }}
+{{ end }}
+
+{{ return $ret }}

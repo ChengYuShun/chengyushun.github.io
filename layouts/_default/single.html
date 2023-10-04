@@ -1,0 +1,16 @@
+<html>
+
+{{ partial "head.html" . }}
+<body>
+
+{{ partial "banner.html" . }}
+<h1>{{ partial "title-or-site.txt" . }}</h1>
+{{ with .Date -}}
+<div class="date">{{ partial "func/format-date" . }}</div>
+<br>
+{{ end -}}
+
+{{ partial "content.html" . }}
+</body>
+
+</html>

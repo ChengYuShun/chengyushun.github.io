@@ -1,0 +1,2 @@
+{{ $i_m := ("I'm" | markdownify) -}}
+{{ substr $i_m 1 (sub (len $i_m) 2) | safeHTML -}}

@@ -1,0 +1,10 @@
+<div class="pages">
+{{ range (where site.RegularPages "Section" . ) -}}
+  <div class="page">
+    <div class="date">{{ partial "func/format-date" .Date }}</div>
+    <a class="page-link" href="{{ .RelPermalink }}">
+      {{- partial "page-title.txt" . -}}
+    </a>
+  </div>
+{{ end -}}
+</div>

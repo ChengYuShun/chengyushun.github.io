@@ -1,0 +1,7 @@
+{{ $ret := "" }}
+
+{{ with (resources.Get .) }}
+  {{ $ret = .Content | safeJS }}
+{{ end }}
+
+{{ return $ret }}

@@ -1,0 +1,12 @@
+baseURL: https://chengyushun.github.io/
+languageCode: en-us
+title: CYS's Site
+
+disableHugoGeneratorInject: true
+
+markup/goldmark/extensions/typographer:
+  apostrophe: "&rsquo;"
+  leftDoubleQuote: <q>
+  leftSingleQuote: <q>
+  rightDoubleQuote: </q>
+  rightSingleQuote: </q>

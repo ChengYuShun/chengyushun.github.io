@@ -1,0 +1,118 @@
+@import "common.scss";
+
+/* Elements */
+
+html {
+    background: $bg-color;
+    color: $color;
+    font-family: sans-serif;
+
+    // British English.
+    quotes: "‘" "’" "“" "”";
+    
+    // Some typography settings.
+    hyphens: auto;
+    text-wrap: wrap;
+}
+
+body {
+    /* Make text in the middle. */
+    margin: auto;
+
+    /* Width */
+    min-width: $min_width;
+    $k: ($max_width - $min_width) / ($max_width / $magic_prop - $min_width);
+    width: css-max(
+        100% * $magic_prop,
+        #{100% * $k} + #{$min_width - $min_width * $k},
+    );
+}
+
+hr {
+    width: 100%;
+    color: $color;
+    border-width: 0.5px;
+}
+
+h1, h2, h3 {
+    font-weight: normal;
+}
+
+h1 {
+    font-size: 1rem * $magic-magn * $magic-magn * $magic-magn;
+    margin-bottom: calc(1em - 1ex);
+}
+
+h2 {
+    font-size: 1rem * $magic-magn * $magic-magn;
+}
+
+h3 {
+    font-size: 1rem * $magic-magn;
+}
+
+p {
+    text-indent: 1em;
+}
+
+h1 + p, h2 + p, h3 + p, br + p {
+    text-indent: 0;
+}
+
+a {
+    // Otherwise blue is too dark.
+    color: lightblue;
+
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+header {
+    height: $banner-height;
+    line-height: $banner-height;
+
+    a {
+        color: $color;
+    }
+}
+
+/* Classes */
+
+a:hover {
+    text-decoration: underline;
+}
+
+.site-title {
+    font-weight: 300;
+    float: left;
+    font-size: $banner-height * $magic-prop;
+}
+
+.site-nav {
+    float: right;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+
+.pages {
+    column-width: $max_width / 2;
+    column-gap: 2em;
+}
+
+.page {
+    font-size: 1rem * $magic-magn;
+    margin-bottom: 1em;
+    break-inside: avoid;
+}
+
+.date {
+    color: lightgray;
+    font-size: 1rem * $magic-prop;
+}
+
+.page-link {
+    color: $color;
+}

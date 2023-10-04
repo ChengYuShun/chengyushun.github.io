@@ -1,0 +1,7 @@
+{{ $ret := "" }}
+
+{{ with (resources.Get . | resources.ToCSS | resources.Minify) }}
+  {{ $ret = .Content | safeCSS }}
+{{ end }}
+
+{{ return $ret }}

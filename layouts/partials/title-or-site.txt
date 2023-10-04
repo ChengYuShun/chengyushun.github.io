@@ -1,0 +1,1 @@
+{{ partial "func/format-title" (partial "func/title-or-site" .) -}}
