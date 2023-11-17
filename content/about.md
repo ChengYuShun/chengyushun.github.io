@@ -1,5 +1,6 @@
 ---
 title: About
+lang: en
 ---
 
 This site is powered by [Hugo](https://gohugo.io), a static site generator. The

@@ -12,6 +12,7 @@ html {
     
     // Some typography settings.
     hyphens: auto;
+    -webkit-hyphens: auto;
     text-wrap: wrap;
 }
 
@@ -53,6 +54,13 @@ h3 {
 
 p {
     text-indent: 1em;
+
+    // To put the text in the centre.
+    text-align: justify;
+}
+
+blockquote {
+    color: $lightgrey;
 }
 
 h1 + p, h2 + p, h3 + p, br + p {

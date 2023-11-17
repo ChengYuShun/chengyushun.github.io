@@ -1,25 +1,29 @@
+<html>
+
 <head>
 
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-{{ hugo.Generator }}
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {{ hugo.Generator }}
 
-<title>{{ partial "title-or-site.txt" . }}</title>
+  <title>{{ partial "title-or-site.txt" . }}</title>
 
-<link rel="stylesheet" href="{{ partial "func/get-css-link" "main.scss" }}">
-<style>
-{{- if (eq .Kind "page" "404") -}}
-  {{ partial "func/get-min-css" "single.scss" -}}
-{{ end -}}
-</style>
+  <link rel="stylesheet" href="{{ partial "func/get-css-link" "main.scss" }}">
+  <style>
+  {{- if (eq .Kind "page" "404") -}}
+    {{ partial "func/get-min-css" "single.scss" -}}
+  {{ end -}}
+  </style>
 
-{{ if .Params.mathjax -}}
-<script>
-{{ partial "func/get-js" "mathjax_config.js" -}}
-</script>
-<script async
-  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-chtml.min.js">
-</script>
+  {{ if .Params.mathjax -}}
+  <script>
+  {{ partial "func/get-js" "mathjax_config.js" -}}
+  </script>
+  <script async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-chtml.min.js">
+  </script>
 
-{{ end -}}
+  {{ end -}}
 </head>
+
+<body{{ with .Params.lang }} lang="{{ . }}"{{ end }}>

@@ -1,8 +1,4 @@
-<html>
-
 {{ partial "head.html" . }}
-<body>
-
 {{ partial "banner.html" . }}
 <h1>{{ partial "title-or-site.txt" . }}</h1>
 {{ with .Date -}}
@@ -11,6 +7,4 @@
 {{ end -}}
 
 {{ partial "content.html" . }}
-</body>
-
-</html>
+{{ partial "tail.html" . }}
